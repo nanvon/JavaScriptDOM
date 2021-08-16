@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <style>
+      body {
+        color: #333;
+        background-color: #ccc;
+        margin: 1em 10%;
+      }
+      h1 {
+        color: #333;
+        background-color: transparent;
+      }
+      a {
+        color: #c60;
+        font-weight: bold;
+        background-color: transparent;
+        text-decoration: no;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        float: left;
+        padding: 1em;
+        list-style: none;
+        /* display: inline; */
+      }
+      #imagegallery li a img {
+        border: 0px;
+        width: 32px;
+      }
+
+      #choosePic {
+        border-bottom: solid 1px grey;
+      }
+      fieldset {
+        display: block;
+        clear: both;
+        width: 256px;
+        text-align: center;
+      }
+      #TEST{
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="choosePic">
+      <h1>选择你的状态</h1>
+      <ul id="imagegallery">
+        <li>
+          <a href="image/wifi.png" title="wifi" id="wifi"
+            ><img src="image/wifi.png" alt="wifi"
+          /></a>    
+        </li>
+        <li>
+          <a href="image/导航.png" title="daohang"
+            ><img src="image/导航.png" alt="daohang"
+          /></a>
+        </li>
+        <li>
+          <a href="image/待机.png" title="daiji"
+            ><img src="image/待机.png" alt="daiji"
+          /></a>
+        </li>
+        <li>
+          <a href="image/监听.png" title="jiantin"
+            ><img src="image/监听.png" alt="jiantin" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- <fieldset>
+      <legend>设备</legend>
+      <img src="image/设备.png" alt="设备" id="placeholder" />
+      <div id="description">Choose an image.</div>
+    </fieldset> -->
+
+    <div id="TEST">
+      <div>
+        <!-- <a href="#" onclick="popUp('http://www.baidu.com');return false;">click me!</a> -->
+        <a href="http://baidu.com/" class="popup" id="test">click</a>
+      </div>
+  
+      <div id="lianjie">
+        <a href="http://baidu.com/">baidu</a>
+        <a href="http://sougou.com/">sougou</a>
+        <a href="http://cn.vuejs.org/">vue</a>
+      </div>
+  
+      <div id="testdiv"></div>
+    </div>
+    <script src="script/showPic.js
+    "></script>
+  </body>
+</html>
